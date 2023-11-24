@@ -1,0 +1,60 @@
+.home{
+    width:90%;
+    margin:auto;
+    margin-bottom: 200px;
+}
+.home-container{
+    position: relative;
+}
+.photo{
+    width:100%;
+}
+.home-title{
+    color:white;
+    display: flex;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-size: 3vw;
+}
+.card-list{
+    margin: 30px 0;
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    justify-items: center;
+    background: #F6F6F6;
+    padding: 50px;
+    border-radius: 20px;
+    /* flex-direction: column; */
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.card-container{
+    width:fit-content
+}
+.card{
+    width: 340px;
+    height: 340px;
+    background: #FF6060;
+    list-style: none;
+    border-radius: 10px;
+    color: white;
+    position: relative;
+}
+.card span{
+    z-index: 5;
+    position: absolute;
+    bottom: 0px;
+    padding:20px;
+}
+.overlay{
+    width: 340px;
+    height: 340px;
+    position: absolute;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5) 0%, rgba(0,0,0,0) 100%);
+    border-radius: 10px;
+}

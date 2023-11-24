@@ -1,0 +1,52 @@
+.propos{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 200px;
+}
+.dropdown{
+    margin-bottom: 30px;
+}
+.dropdown-button{
+    background: #FF6060;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    height: 52px;
+    padding: 10px 20px;
+    font-size: 24px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.dropdown-content{
+    background: #e3e3e3;
+    color: #FF6060;
+    font-weight: 300;
+    font-size: 20px;
+    border-radius: 5px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease-in-out;
+}
+  
+  .dropdown-content.open {
+    max-height: 100%; /* Ajustez la hauteur maximale selon vos besoins */
+    transition: max-height 0.3s ease-in-out;
+    padding:15px;
+  }
+  
+  .fade-in {
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .dropdown-content.open .fade-in {
+    opacity: 1;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .dropdown-content ul{
+    list-style-type: none;
+    margin:10px;
+    padding:5px;
+  }

@@ -1,0 +1,22 @@
+.error{
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    color: #FF6060;
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+.error h1{
+    font-size: 100px;
+}
+.error a{
+    text-decoration: none;
+}
+.error p{
+    font-size: 25px;
+}
+.error div{
+    margin-bottom: 40px;
+}
