@@ -1,8 +1,8 @@
 import React from 'react';
 
 function Rating({ rating }) {
-  const filledStars = Math.floor(rating); // Nombre d'étoiles pleines
-  const remainingStar = 5 - filledStars; // Nombre d'étoiles restantes
+  const filledStars = Math.floor(rating);
+  const remainingStar = 5 - filledStars;
 
   const filledStarsArray = Array.from({ length: filledStars }, (_, index) => (
     <span key={index} className="star filled">★</span>

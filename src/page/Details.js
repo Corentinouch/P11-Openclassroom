@@ -1,7 +1,7 @@
 import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import Rating from '../composant/Rating';
-import { Carousel } from 'react-responsive-carousel';
+import Carousel from '../composant/Carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Dropdown from '../composant/Dropdown';
 import './details.css'
@@ -16,13 +16,7 @@ import './details.css'
     return (
       <div className="detail">
         <div className="photo-carousel">
-          <Carousel showArrows={true} showThumbs={false} infiniteLoop={true}>
-            {item.pictures.map((picture, index) => (
-              <div key={index}>
-                <img src={picture} alt={`${index + 1}`} />
-              </div>
-            ))}
-          </Carousel>
+          <Carousel images={item.pictures} />
         </div>
         <div className='all-gpe'>
         <div className='group'>

@@ -15,7 +15,7 @@ function Dropdown({ title, content }) {
         <span className={`arrow ${isDropdownOpen ? 'rotated' : ''}`}>▼</span>
       </button>
       <div className={`dropdown-content ${isDropdownOpen ? 'open' : ''}`}>
-        <p className="fade-in">{content}</p>
+        <span className="fade-in">{content}</span>
       </div>
     </div>
   );

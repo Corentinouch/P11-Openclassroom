@@ -18,10 +18,13 @@
     align-items: center;
 }
 .header-list li{
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 0px 10px;
     color:#f46262;
     text-wrap: nowrap;
+}
+.header-list li:hover{
+    text-decoration: underline;
 }
 .header-list a{
     color:#f46262;

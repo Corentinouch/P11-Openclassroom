@@ -15,6 +15,7 @@ function Home({data}) {
                     <Link to={`/detail/${item.id}`} className="card-link">
                     <li className="card">
                         <div className='overlay'></div>
+                        <img className='cover_image' src={item.cover} alt='cover_image'></img>
                         <span>{item.title}</span>
                     </li>
                     </Link>

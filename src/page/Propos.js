@@ -7,7 +7,9 @@ import proposBackground from '../propos_photo.png'
 function Propos() {
   return (
     <div className="propos">
-      <img className="photo"src={proposBackground} alt="home background"/>
+      <div className='photo_container'>
+        <img className="photo_propos"src={proposBackground} alt="home background"/>
+      </div>
       <Dropdown
       className='dropdown'
         title="Fiabilité"
