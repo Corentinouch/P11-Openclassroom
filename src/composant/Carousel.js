@@ -22,6 +22,7 @@ function Carousel({ images }) {
       <div className="slide-container" style={{ transform: `translateX(-${currentIndex * 100}%)` }}>
         {images.map((image, index) => (
           <div key={index} className="slide">
+            <span className="image-counter">{`${currentIndex + 1}/${images.length}`}</span>
             <img src={image} alt={`Slide ${index}`} />
           </div>
         ))}

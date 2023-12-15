@@ -44,4 +44,9 @@
     right: 0;
   }
   
-  
+  .image-counter{
+    position: fixed;
+    color: white;
+    width: 100%;
+    bottom: 20px;
+  }
