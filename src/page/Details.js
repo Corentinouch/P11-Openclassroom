@@ -2,7 +2,6 @@ import React from 'react';
 import { useParams, Navigate } from 'react-router-dom';
 import Rating from '../composant/Rating';
 import Carousel from '../composant/Carousel';
-import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import Dropdown from '../composant/Dropdown';
 import './details.css'
 

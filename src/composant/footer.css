@@ -9,8 +9,21 @@
 }
 .copyright{
     color:white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.copyright p{
+    margin:0px;
+    margin-right: 5px;
 }
 .logo-footer{
     width:100px;
     margin-bottom:15px;
+}
+
+@media screen and (min-width: 400px) {
+    .copyright{
+        flex-direction:row;
+    }
 }

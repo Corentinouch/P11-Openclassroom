@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import './dropdown.css'; // Assurez-vous d'avoir un fichier CSS associé pour les styles
+import './dropdown.css';
 
 function Dropdown({ title, content }) {
   const [isDropdownOpen, setDropdownOpen] = useState(false);

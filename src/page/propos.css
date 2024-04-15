@@ -5,7 +5,7 @@
 }
 .dropdown{
     margin: 30px auto;
-    width:90%;
+    width:100%;
 }
 .dropdown-button{
     background: #FF6060;
@@ -27,13 +27,15 @@
     border-radius: 5px;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.3s ease-in-out;
+    transition: all 0.1s ;
+    opacity: 0;
 }
   
   .dropdown-content.open {
-    max-height: 100%; /* Ajustez la hauteur maximale selon vos besoins */
+    max-height: 100%;
     transition: max-height 0.3s ease-in-out;
     padding:15px;
+      opacity: 1;
   }
   
   .fade-in {
@@ -45,6 +47,10 @@
     opacity: 1;
     transition: opacity 0.3s ease-in-out;
   }
+.dropdown-content:not(.open) .fade-in{
+    opacity: 0;
+    transition: 0s;
+}
   
   .dropdown-content ul{
     list-style-type: none;
@@ -70,3 +76,9 @@
   height: 100%; /* Permet à la hauteur de s'ajuster automatiquement pour garder les proportions */
   object-fit: cover; 
   }
+
+  @media screen and (min-width: 400px) {
+    .dropdown{
+        width:90%;
+    }
+}

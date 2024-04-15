@@ -19,7 +19,9 @@
     margin:30px 0px;
     flex-wrap: wrap;
 }
-
+.equipment-list .dropdown{
+    width:100%
+        }
 #hostgpe{
     flex-direction: row-reverse;
     align-items: center;
@@ -72,9 +74,10 @@
     border-radius: 5px;
   }
   .photo-carousel img {
-    width: 100%;
-    height: 600px;
-    object-fit: contain; /* Ajuste la taille de l'image tout en préservant les proportions */
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: inline-block;
   }
 
   @media screen and (min-width: 768px) {
@@ -91,5 +94,6 @@
         width:100%;
         margin-right: 50px;
     }
+    
     
 }
